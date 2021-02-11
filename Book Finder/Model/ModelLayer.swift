@@ -19,14 +19,15 @@ protocol ModelLayer {
 
 class ModelLayerIMPL:ModelLayer{
     
-    fileprivate let networkLayer:NetworkLayerIMPL
-    fileprivate let translationLayer:TranslationLayer
+    fileprivate let networkLayer:NetworkLayerIMPL = NetworkLayerIMPL()
+    fileprivate let translationLayer:TranslationLayer = TranslationLayer()
     fileprivate let bag = DisposeBag()
     
-    init(networkLayer:NetworkLayerIMPL,translationLayer:TranslationLayer) {
-        self.networkLayer = networkLayer
-        self.translationLayer = translationLayer
-    }
+    //TODO: DI
+    //    init(networkLayer:NetworkLayerIMPL,translationLayer:TranslationLayer) {
+    //        self.networkLayer = networkLayer
+    //        self.translationLayer = translationLayer
+    //    }
     
     func searchBooks(for query: String, pageNo: Int, limit: Int, onCompleted: @escaping SearchResultResponseBlock) {
         let url = URL(string: String(format: URLConstants.Api.Path.searchBooks, query,pageNo.description,limit.description).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!
