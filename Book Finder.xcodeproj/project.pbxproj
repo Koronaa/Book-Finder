@@ -80,6 +80,8 @@
 		B62026FC25D54CB00094A85F /* Book Finder */ = {
 			isa = PBXGroup;
 			children = (
+				B620272225D551310094A85F /* Helpers */,
+				B620272125D551170094A85F /* Constants */,
 				B620272025D550A90094A85F /* Translation */,
 				B620271F25D5508B0094A85F /* UI */,
 				B620271E25D5507B0094A85F /* Network */,
@@ -129,6 +131,20 @@
 			children = (
 			);
 			path = Translation;
+			sourceTree = "<group>";
+		};
+		B620272125D551170094A85F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B620272225D551310094A85F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
