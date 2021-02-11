@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,7 +48,6 @@
 				5512510095D58459D01C0697 /* Pods-Book Finder.debug.xcconfig */,
 				46BEA5A712C1A3D01404674A /* Pods-Book Finder.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +80,55 @@
 		B62026FC25D54CB00094A85F /* Book Finder */ = {
 			isa = PBXGroup;
 			children = (
-				B62026FD25D54CB00094A85F /* AppDelegate.swift */,
-				B62026FF25D54CB00094A85F /* SceneDelegate.swift */,
-				B620270125D54CB00094A85F /* ViewController.swift */,
-				B620270325D54CB00094A85F /* Main.storyboard */,
-				B620270625D54CB10094A85F /* Assets.xcassets */,
-				B620270825D54CB10094A85F /* LaunchScreen.storyboard */,
-				B620270B25D54CB10094A85F /* Info.plist */,
+				B620272025D550A90094A85F /* Translation */,
+				B620271F25D5508B0094A85F /* UI */,
+				B620271E25D5507B0094A85F /* Network */,
+				B620271D25D550740094A85F /* Model */,
+				B620271925D550140094A85F /* SupportingFiles */,
 			);
 			path = "Book Finder";
+			sourceTree = "<group>";
+		};
+		B620271925D550140094A85F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B62026FD25D54CB00094A85F /* AppDelegate.swift */,
+				B62026FF25D54CB00094A85F /* SceneDelegate.swift */,
+				B620270625D54CB10094A85F /* Assets.xcassets */,
+				B620270B25D54CB10094A85F /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B620271D25D550740094A85F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B620271E25D5507B0094A85F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B620271F25D5508B0094A85F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B620270125D54CB00094A85F /* ViewController.swift */,
+				B620270325D54CB00094A85F /* Main.storyboard */,
+				B620270825D54CB10094A85F /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B620272025D550A90094A85F /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Translation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,7 +397,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KFN6BYG44K;
-				INFOPLIST_FILE = "Book Finder/Info.plist";
+				INFOPLIST_FILE = "Book Finder/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +417,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KFN6BYG44K;
-				INFOPLIST_FILE = "Book Finder/Info.plist";
+				INFOPLIST_FILE = "Book Finder/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
